@@ -1,0 +1,35 @@
+.menu {
+	width: 600px;
+	height: 400px;
+	border: 2px solid black;
+	overflow: hidden;
+	margin: auto;
+	background-image: url(background.jpg);
+}
+
+#timer {
+    stroke: chartreuse;
+    stroke-width: 8;
+    fill: none;
+    stroke-dasharray: 252 0;
+    stroke-linecap: butt;
+    transition-property: stroke-dasharray, stroke;
+	transition-duration: 10s;
+	transition-timing-function: linear;
+}
+
+#timer.active {
+	stroke-dasharray: 0 252;
+	stroke: red;
+}
+
+svg {
+	margin: 25px 0 0 150px;
+}
+
+#rand_number {
+	font-size: 100px;
+	font-weight: bold;
+	margin: -210px 0 0 250px;
+	color: aqua;
+}
